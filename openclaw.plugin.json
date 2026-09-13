@@ -1,0 +1,18 @@
+{
+  "id": "ontario-licence-check",
+  "name": "Ontario Licence Check",
+  "version": "1.0.0",
+  "description": "Validates Ontario driver's licence numbers and decodes the birth date and sex marker they encode. Format check only, runs offline.",
+  "categories": ["other"],
+  "contracts": {
+    "tools": ["ontario_licence_check"]
+  },
+  "activation": {
+    "onStartup": true
+  },
+  "configSchema": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {}
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "openclaw-ontario-licence-check",
+  "version": "1.0.0",
+  "description": "OpenClaw plugin that validates Ontario driver's licence numbers and decodes the birth date they encode. Offline, no network calls.",
+  "keywords": ["openclaw", "openclaw-plugin", "ontario", "drivers-licence", "driver-record", "driver-abstract", "canada"],
+  "homepage": "https://mydriversabstract.ca",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mydriversabstract-CA/MyDriversAbstract"
+  },
+  "license": "MIT",
+  "author": "My Drivers Abstract (https://mydriversabstract.ca)",
+  "type": "module",
+  "files": ["index.js", "licence.js", "openclaw.plugin.json", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "node --test licence.test.js"
+  },
+  "dependencies": {
+    "typebox": "1.3.30"
+  },
+  "peerDependencies": {
+    "openclaw": ">=2026.9.4"
+  },
+  "openclaw": {
+    "extensions": ["./index.js"],
+    "compat": {
+      "pluginApi": ">=2026.9.4",
+      "minGatewayVersion": "2026.9.4"
+    },
+    "build": {
+      "openclawVersion": "2026.9.4",
+      "pluginSdkVersion": "2026.9.4"
+    }
+  }
+}
